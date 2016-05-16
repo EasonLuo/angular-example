@@ -4,13 +4,13 @@
 <title>Angular</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
-<body ng-app="app" ng-init="original=items=[{'id':1,'name':'A','price':25.5,'quality':3},
-									{'id':2,'name':'B','price':15,'quality':1},
-									{'id':3,'name':'C','price':500.00,'quality':4},
-									{'id':4,'name':'D','price':1.03,'quality':0},
-									{'id':5,'name':'E','price':88,'quality':6},
-									{'id':6,'name':'F','price':0.99,'quality':9},
-									{'id':7,'name':'G','price':160.200001,'quality':2}]">
+<body ng-app="app" ng-init="original=items=[{'id':1,'name':'Eason','price':25.5,'stock':311},
+									{'id':2,'name':'Seyla','price':15,'stock':13},
+									{'id':3,'name':'Anna','price':500.00,'stock':43},
+									{'id':4,'name':'Tim','price':1.03,'stock':0},
+									{'id':5,'name':'Vey','price':88,'stock':6},
+									{'id':6,'name':'Travis','price':0.99,'stock':290},
+									{'id':7,'name':'Joachim','price':160.200001,'stock':25}]">
 
 <div class="container" ng-controller="mycontroller">
 	<h2>Search Products</h2>
@@ -25,14 +25,14 @@
 				<th><a href="" ng-click="sortBy('id')">ID</a></th>
 				<th><a href="" ng-click="sortBy('name')">NAME</a></th>
 				<th><a href="" ng-click="sortBy('price')">PRICE</a></th>
-				<th><a href="" ng-click="sortBy('quality')">QUALITY</a></th>
+				<th><a href="" ng-click="sortBy('stock')">STOCK</a></th>
 			</tr>
 		</thead>
 		<tr ng-repeat="item in items | orderBy:predicate:reverse">
 			<td>{{item.id}}</td>
-			<td>{{item.name | lowercase}}</td>
+			<td>{{item.name}}</td>
 			<td>{{item.price | currency}}</td>
-			<td>{{item.quality}}</td>
+			<td>{{item.stock}}</td>
 		</tr>
 	</table>
 </div>
