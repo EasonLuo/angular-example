@@ -1,0 +1,11 @@
+[
+	{"id":1,"name":"John Doe","price":25.5,"stock":311},
+	{"id":2,"name":"Matthew Smith","price":15,"stock":13},
+	{"id":3,"name":"Jack Back","price":500.00,"stock":43},
+	{"id":4,"name":"Sharon Rose","price":1.03,"stock":0},
+	{"id":5,"name":"Katt Bee","price":88,"stock":6},
+	{"id":6,"name":"Dannie Cloud","price":0.99,"stock":290},
+	{"id":7,"name":"Micheal Jordan","price":160.200001,"stock":25},
+	{"id":8,"name":"Micheal Jackson","price":160.200001,"stock":25},
+	{"id":9,"name":"Micheal Dell","price":160.200001,"stock":25}
+]
