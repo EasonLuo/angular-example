@@ -22,6 +22,7 @@ nav>ul>li>a{
 	color:#000;
 	background-color:#FFF;
 	text-decoration: none;
+	display:inline-block;
 }
 nav>ul>li>a:hover{
 	color:#FFF;
